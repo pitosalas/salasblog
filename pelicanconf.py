@@ -13,3 +13,14 @@ STATIC_PATHS = ['images']
 
 THEME = 'notmyidea'
 DEFAULT_PAGINATION = 5
+
+# Enable page generation
+PAGE_PATHS = ['pages']
+
+# Add menu items manually
+MENUITEMS = [
+    ('Home', '/'),
+    ('Curacao', '/curacao.html'),
+    ('Links', '/links.html'),
+    ('Brandeis', '/brandeis.html'),
+]
