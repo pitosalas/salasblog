@@ -3,7 +3,7 @@ import os
 AUTHOR = 'Pito Salas'
 SITENAME = 'Salas Blog'
 SITETITLE = 'Salas Blog'
-SITEURL = os.getenv("SITEURL", "")
+SITEURL = 'https://pitosalas.github.io/salasblog'
 
 PATH = 'content'
 TIMEZONE = 'America/New_York'
