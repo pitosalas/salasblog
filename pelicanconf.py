@@ -19,11 +19,11 @@ DEFAULT_PAGINATION = 5
 # Enable page generation
 PAGE_PATHS = ['pages', 'curacao', 'links', 'about', 'brandeis']
 
-# Add menu items manually
-MENUITEMS = [
-    ('Home', '/'),
-    ('Curacao', '/curacao.html'),
-    ('Links', '/links.html'),
-    ('About', '/about.html'),
-    ('Brandeis', '/brandeis.html'),
+# # Add menu items manually
+# MENUITEMS = [
+#     ('Home', '/'),
+#     ('Curacao', '/curacao.html'),
+#     ('Links', '/links.html'),
+#     ('About', '/about.html'),
+#     ('Brandeis', '/brandeis.html'),
 ]
