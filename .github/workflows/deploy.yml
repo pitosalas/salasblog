@@ -1,4 +1,13 @@
 name: Build and Deploy Pelican Site
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
 on:
   push:
     branches: [main]
@@ -23,12 +32,11 @@ jobs:
       - name: Build site
         run: pelican content -o output -s pelicanconf.py
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy to GitHub Pages!
+        uses: actions/deploy-pages@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: ./output
+          token: ${{ secrets.GITHUB_TOKEN }}
+          build_dir: output
 
       - name: Clean output directory
         run: rm -rf output
