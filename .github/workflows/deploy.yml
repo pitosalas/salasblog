@@ -1,7 +1,7 @@
 name: Build and Deploy Pelican Site
 on:
   push:
-    branches: [main]  # or 'master' if that's your default branch
+    branches: [main]
 
 jobs:
   build:
