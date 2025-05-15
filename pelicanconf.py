@@ -9,7 +9,7 @@ DEFAULT_LANG = 'en'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 
 ARTICLE_PATHS = ['posts']
-STATIC_PATHS = ['images']
+STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 
 THEME = 'notmyidea'
 DEFAULT_PAGINATION = 5
@@ -22,5 +22,6 @@ MENUITEMS = [
     ('Home', '/'),
     ('Curacao', '/curacao.html'),
     ('Links', '/links.html'),
+    ('About', '/about.html'),
     ('Brandeis', '/brandeis.html'),
 ]
