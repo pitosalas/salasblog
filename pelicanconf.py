@@ -26,4 +26,4 @@ PAGE_PATHS = ['pages', 'curacao', 'links', 'about', 'brandeis']
 #     ('Links', '/links.html'),
 #     ('About', '/about.html'),
 #     ('Brandeis', '/brandeis.html'),
-]
+# ]
