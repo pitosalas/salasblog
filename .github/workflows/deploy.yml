@@ -30,3 +30,6 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
           publish_dir: ./output
+
+      - name: Clean output directory
+        run: rm -rf output
