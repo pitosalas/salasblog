@@ -1,7 +1,9 @@
+import os
+
 AUTHOR = 'Pito Salas'
 SITENAME = 'Salas Blog'
 SITETITLE = 'Salas Blog'
-SITEURL = ''
+SITEURL = os.getenv("SITEURL", "")
 
 PATH = 'content'
 TIMEZONE = 'America/New_York'
