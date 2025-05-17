@@ -1,8 +1,8 @@
 ---
-title: This is the title
+title: a title
 date: 2025-05-17
-tags: [these, are, tags]
+tags: [a slug]
 slug: this is the slug
 ---
 
-Here is the body
+a boduyHere is the body
