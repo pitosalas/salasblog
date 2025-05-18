@@ -1,6 +1,6 @@
 ---
 title: Yada2
-Slug: Yada10
-Group: Brandeis
+slug: Yada10
+group: brandeis
 ---
 Yada

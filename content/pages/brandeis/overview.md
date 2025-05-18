@@ -1,7 +1,6 @@
 ---
-Title: Brandeis
-Slug: brandeis
-Template: grouped-listing
-Group: brandeis
+title: Brandeis
+slug: brandeis
+template: grouped-listing
+group: brandeis
 ---
-Here we are
