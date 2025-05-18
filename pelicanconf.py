@@ -22,8 +22,6 @@ PAGE_PATHS = ['pages', 'curacao', 'links', 'about', 'brandeis']
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
     ('Home', '/'),
-    ('Curacao', '/curacao.html'),
-    ('Brandeis', '/brandeis.html'),
     ('Submit Post', 'https://salasblogf.fly.dev/')  # 👈 Link to your FastAPI form
 ]
 
