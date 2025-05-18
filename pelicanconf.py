@@ -3,7 +3,7 @@ import os
 AUTHOR = 'Pito Salas'
 SITENAME = 'Salas Blog'
 SITETITLE = 'Salas Blog'
-SITEURL = 'https://pitosalas.github.io/salasblog'  # Update to '' for local dev
+SITEURL = 'https://pitosalas.github.io/salasblog' 
 
 PATH = 'content'
 TIMEZONE = 'America/New_York'
@@ -17,7 +17,7 @@ STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 
 # Content Paths
 ARTICLE_PATHS = ['posts']
-PAGE_PATHS = ['pages', 'curacao', 'links', 'about', 'brandeis']
+PAGE_PATHS = ['pages']
 
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
