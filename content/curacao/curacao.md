@@ -1,5 +1,5 @@
 ---
-title: "Curacao Notes"
+title: Curacao Notes
 author: Pito Salas
 date: 2018-06-19
 revised: 2024-02-01
