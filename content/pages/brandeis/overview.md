@@ -1,5 +1,5 @@
 ---
-Title: About Brandeis
+Title: Brandeis
 Slug: brandeis
 Template: grouped-listing
 Group: brandeis
