@@ -1,4 +1,3 @@
-import os
 
 AUTHOR = 'Pito Salas'
 SITENAME = 'Salas Blog'
