@@ -9,7 +9,7 @@ PATH = 'content'
 TIMEZONE = 'America/New_York'
 DEFAULT_LANG = 'en'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
-DEFAULT_PAGINATION = 5
+DEFAULT_PAGINATION = 10
 
 # Theme and Static Files
 DISPLAY_PAGES_ON_MENU = False
@@ -24,10 +24,10 @@ PAGE_PATHS = ['pages']
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
     ('Home', '/'),
-    ('About', '/pages/about.html'),
-    ('Brandeis', '/pages/brandeis.html'),    
+    ('About', 'pages/about.html'),
+    ('Brandeis', 'pages/brandeis.html'),    
     ('Submit Post', 'https://salasblogf.fly.dev/'),
-    ("Archive", "/archives.html"),
+    ("Archive", "archives.html"),
 
 ]
 
