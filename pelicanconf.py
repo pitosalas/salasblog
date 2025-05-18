@@ -12,6 +12,8 @@ DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DEFAULT_PAGINATION = 5
 
 # Theme and Static Files
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 THEME = 'theme/notmyidea'
 STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 
@@ -22,7 +24,11 @@ PAGE_PATHS = ['pages']
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
     ('Home', '/'),
-    ('Submit Post', 'https://salasblogf.fly.dev/')  # 👈 Link to your FastAPI form
+    ('About', '/pages/about.html'),
+    ('Brandeis', '/pages/brandeis.html'),    
+    ('Submit Post', 'https://salasblogf.fly.dev/'),
+    ("Archive", "/archives.html"),
+
 ]
 
 # Feed generation (usually disabled during development)
