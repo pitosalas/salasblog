@@ -1,6 +1,6 @@
 ---
-Title: Pito
-Slug: pito
-Group: about
+title: Pito
+slug: pito
+group: about
 ---
 This is a test

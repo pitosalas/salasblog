@@ -1,5 +1,5 @@
 ---
-Title: Our Team
-Slug: team
-Group: about
+title: Our Team
+slug: team
+group: about
 ---

@@ -1,6 +1,6 @@
 ---
-Title: About
-Slug: about
-Template: grouped-listing
-Group: about
+title: About
+slug: about
+template: grouped-listing
+group: about
 ---
