@@ -12,7 +12,7 @@ DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DEFAULT_PAGINATION = 5
 
 # Theme and Static Files
-THEME = 'themes/notmyidea'
+THEME = 'theme/notmyidea'
 STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 
 # Content Paths
