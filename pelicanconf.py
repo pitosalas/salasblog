@@ -28,6 +28,8 @@ MENUITEMS = [
     ('Submit Post', 'https://salasblogf.fly.dev/'),
     ('Archive', '/archives.html'),
     ('Archive', 'archives.html'),
+    ('Brandeis', 'brandeis.html'),
+    ('Curacao', 'curacao.html'),
     ('About1','about.html'),
     ('About2','/about.html'),
     ('About3','pages/about.html'),
