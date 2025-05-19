@@ -25,11 +25,11 @@ PAGE_PATHS = ['pages']
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
     ('Home', '/'),
-    ('Brandeis', '/pages/brandeis.html'),    
-    ('Curacao', '/pages/curacao.html'),
+    ('Brandeis', 'pages/brandeis.html'),    
+    ('Curacao', 'pages/curacao.html'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
     ('Archive', '/archives.html'),
-    ('About', '/pages/about.html'),
+    ('About', 'pages/about.html'),
 ]
 
 # Feed generation (usually disabled during development)
