@@ -25,14 +25,10 @@ PAGE_PATHS = ['pages/about', 'pages/brandeis', 'pages/curacao']
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
     ('Home', '/'),
-    ('About', '/about/overview.html'),
-    ('Brandeis', '/brandeis/overview.html'),
-    ('Curacao', '/curacao/curacao.html'),
-    ('Archive', '/archives.html'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
+    ('Archive', 'archives.html'),
+    ('About1','about.html'),
+    ('About2','/about.html'),
+    ('About3','pages/about.html'),
+    ('About4','/pages/about.html')
 ]
-# Feed generation (usually disabled during development)
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-
-# Optional metadata
-RELATIVE_URLS = True  # Set to False in production (overridden by publishconf.py)
