@@ -26,6 +26,7 @@ PAGE_PATHS = ['pages/about', 'pages/brandeis', 'pages/curacao']
 MENUITEMS = [
     ('Home', '/'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
+    ('New Archive', 'newarchive.html'),    
     ('Archive', '/archives.html'),
     ('Archive', 'archives.html'),
     ('Brandeis', 'brandeis.html'),

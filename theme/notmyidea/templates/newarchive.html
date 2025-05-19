@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Archives - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<h1>Archives</h1>
+<div id="archives">
+
+{% set posts_by_year = {} %}
+{% for article in articles %}
+    {% set year = article.date.strftime('%Y') %}
+    {% set month = article.date.strftime('%B') %}
+    {% if year not in posts_by_year %}
+        {% set _ = posts_by_year.update({year: {month: [article]}}) %}
+    {% elif month not in posts_by_year[year] %}
+        {% set _ = posts_by_year[year].update({month: [article]}) %}
+    {% else %}
+        {% set _ = posts_by_year[year][month].append(article) %}
+    {% endif %}
+{% endfor %}
+
+{% for year in posts_by_year|dictsort(reverse=true) %}
+    <h2>{{ year[0] }}</h2>
+    <ul>
+    {% for month, articles in year[1]|dictsort(reverse=true) %}
+        <li><strong>{{ month }}</strong>
+            <ul>
+                {% for article in articles %}
+                <li>
+                    <span style="white-space: nowrap;">{{ article.date.strftime('%b %d') }}</span> —
+                    <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </li>
+    {% endfor %}
+    </ul>
+{% endfor %}
+
+</div>
+{% endblock %}
