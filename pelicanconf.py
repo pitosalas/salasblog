@@ -20,15 +20,17 @@ STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 
 # Content Paths
 ARTICLE_PATHS = ['posts']
-PAGE_PATHS = ['pages']
+PAGE_PATHS = ['pages/about', 'pages/brandeis', 'pages/curacao']
 
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
-    ('Home', 'https://pitosalas.github.io/salasblog'),
+    ('Home', '/'),
+    ('About', '/about/overview.html'),
+    ('Brandeis', '/brandeis/overview.html'),
+    ('Curacao', '/curacao/curacao.html'),
+    ('Archive', '/archives.html'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
-    ('Archive', '/https://pitosalas.github.io/salasblog/archives.html'),
 ]
-
 # Feed generation (usually disabled during development)
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
 
