@@ -31,9 +31,6 @@ MENUITEMS = [
 
 # Feed generation (usually disabled during development)
 FEED_ALL_ATOM = 'feeds/all.atom.xml'
-CATEGORY_FEED_ATOM = 'feeds/{slug}.atom.xml'
-AUTHOR_FEED_ATOM = 'feeds/{slug}.atom.xml'
-AUTHOR_FEED_RSS = 'feeds/{slug}.rss.xml'
 
 # Optional metadata
 RELATIVE_URLS = True  # Set to False in production (overridden by publishconf.py)
