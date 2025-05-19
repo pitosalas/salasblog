@@ -13,7 +13,7 @@ LOAD_CONTENT_CACHE = False
 USE_FOLDER_AS_CATEGORY = False
 
 # Theme and Static Files
-DISPLAY_PAGES_ON_MENU = True
+DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
 THEME = 'theme/notmyidea'
 STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
