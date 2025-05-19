@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block content %}
+    <section id="content" class="body">
+        <h1>All posts</h1>
+
+        <ul>
+            {% for article in dates %}
+                <li>{{ article.locale_date }} - <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}

@@ -1,12 +1,44 @@
 {% extends "base.html" %}
-{% block content %}
-    <section id="content" class="body">
-        <h1>All posts</h1>
+{% block title %}Archives - {{ SITENAME }}{% endblock %}
 
-        <ul>
-            {% for article in dates %}
-                <li>{{ article.locale_date }} - <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></li>
-            {% endfor %}
-        </ul>
+{% block content %}
+<h1>Archives</h1>
+
+{% if articles %}
+    <section id="content" class="body">
+        <h1>All Posts</h1>
+        <hr />
+
+        {% for article in articles %}
+        <article class="hentry">
+            <header>
+                <h2 class="entry-title">
+                    <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title }}">{{ article.title }}</a>
+                </h2>
+            </header>
+
+            <footer class="post-info">
+                <abbr class="published" title="{{ article.date.isoformat() }}">
+                    Published: {{ article.date.strftime('%Y-%m-%d') }}
+                </abbr>
+                {% if article.author %}
+                <address class="vcard author">By <a class="url fn" href="{{ SITEURL }}/author/{{ article.author|lower|replace(' ', '-') }}.html">{{ article.author }}</a></address>
+                {% endif %}
+                {% if article.category %}
+                <p>In <a href="{{ SITEURL }}/category/{{ article.category|lower|replace(' ', '-') }}.html">{{ article.category }}</a>.</p>
+                {% endif %}
+            </footer>
+
+            {% if article.summary %}
+                <div class="entry-content">{{ article.summary }}</div>
+            {% else %}
+                <div class="entry-content">{{ article.content|truncate(150, True) }}</div>
+            {% endif %}
+
+            <p><a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a></p>
+        </article>
+        <hr />
+        {% endfor %}
     </section>
+{% endif %}
 {% endblock %}
