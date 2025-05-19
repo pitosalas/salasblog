@@ -24,13 +24,11 @@ PAGE_PATHS = ['pages']
 
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
-    ('Home', 'https://pitosalas.github.io/salasblog'),
+    ('Home', '/'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
-    ('Archive', '/https://pitosalas.github.io/salasblog/archives.html'),
-]
-
-# Feed generation (usually disabled during development)
-FEED_ALL_ATOM = 'feeds/all.atom.xml'
-
-# Optional metadata
-RELATIVE_URLS = True  # Set to False in production (overridden by publishconf.py)
+    ('Archive', '/archives.html'),
+    ('Archive', 'archives.html'),
+    ('About','about.html'),
+    ('About','/about.html'),
+    ('About','pages/about.html'),
+    ('About','/pages/about.html'),
