@@ -13,7 +13,7 @@ LOAD_CONTENT_CACHE = False
 USE_FOLDER_AS_CATEGORY = False
 
 # Theme and Static Files
-DISPLAY_PAGES_ON_MENU = False
+DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 THEME = 'theme/notmyidea'
 STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
@@ -25,11 +25,8 @@ PAGE_PATHS = ['pages']
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
     ('Home', 'https://pitosalas.github.io/salasblog'),
-    ('Brandeis', 'https://pitosalas.github.io/salasblog/pages/brandeis.html'),    
-    ('Curacao', 'https://pitosalas.github.io/salasblog/pages/curacao.html'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
     ('Archive', '/https://pitosalas.github.io/salasblog/archives.html'),
-    ('About', 'https://pitosalas.github.io/salasblog/pages/about.html'),
 ]
 
 # Feed generation (usually disabled during development)
