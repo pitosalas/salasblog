@@ -25,10 +25,10 @@ PAGE_PATHS = ['pages']
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
     ('Home', '/'),
-    ('Brandeis', '/brandeis.html'),    
-    ('Curacao', '/curacao.html'),
+    ('Brandeis', 'brandeis.html'),    
+    ('Curacao', 'curacao.html'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
-    ('Archive', 'archives.html'),
+    ('Archive', '/archives.html'),
     ('About', 'about.html'),
 ]
 
