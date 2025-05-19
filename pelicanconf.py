@@ -31,4 +31,5 @@ MENUITEMS = [
     ('About','about.html'),
     ('About','/about.html'),
     ('About','pages/about.html'),
-    ('About','/pages/about.html'),
+    ('About','/pages/about.html')
+]
