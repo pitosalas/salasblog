@@ -29,9 +29,16 @@ MENUITEMS = [
     ('Archive', '/archives.html'),
     ('Archive', 'archives.html'),
     ('Brandeis', 'brandeis.html'),
-    ('Curacao', 'curacao.html'),
     ('About1','about.html'),
     ('About2','/about.html'),
     ('About3','pages/about.html'),
-    ('About4','/pages/about.html')
+    ('About4','/pages/about.html'),
+    ('Brandeis1','brandeis.html'),
+    ('Brandeis2','/brandeis.html'),
+    ('Brandeis3','pages/brandeis.html'),
+    ('Brandeis4','/pages/brandeis.html'),
+    ('Curacao1','curacao.html'),
+    ('Curacao2','/curacao.html'),
+    ('Curacao3','pages/curacao.html'),
+    ('Curacao4','/pages/curacao.html')
 ]
