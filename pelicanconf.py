@@ -10,6 +10,8 @@ DEFAULT_LANG = 'en'
 DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DEFAULT_PAGINATION = 10
 LOAD_CONTENT_CACHE = False
+USE_FOLDER_AS_CATEGORY = False
+
 # Theme and Static Files
 DISPLAY_PAGES_ON_MENU = False
 DISPLAY_CATEGORIES_ON_MENU = False
@@ -23,12 +25,11 @@ PAGE_PATHS = ['pages']
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
     ('Home', ''),
-    ('Brandeis', 'brandeis.html'),    
-    ('Curacao', 'curacao.html'),
+    ('Brandeis', '/pages/brandeis.html'),    
+    ('Curacao', '/pages/curacao.html'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
-    ("Archive", "archives.html"),
-    ('About', 'about.html'),
-
+    ('Archive', '/archives.html'),
+    ('About', '/pages/about.html'),
 ]
 
 # Feed generation (usually disabled during development)
