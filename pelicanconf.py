@@ -13,14 +13,16 @@ LOAD_CONTENT_CACHE = False
 USE_FOLDER_AS_CATEGORY = False
 
 # Theme and Static Files
-DISPLAY_PAGES_ON_MENU = False
-DISPLAY_CATEGORIES_ON_MENU = False
 THEME = 'theme/notmyidea'
 STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 
 # Content Paths
 ARTICLE_PATHS = ['posts']
 PAGE_PATHS = ['pages/about', 'pages/brandeis', 'pages/curacao']
+PAGE_URL = '{slug}.html'
+PAGE_SAVE_AS = '{slug}.html'
+DISPLAY_PAGES_ON_MENU = False
+DISPLAY_CATEGORIES_ON_MENU = False
 
 # Menu Items (shown in top nav bar)
 MENUITEMS = [
