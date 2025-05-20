@@ -15,6 +15,7 @@ USE_FOLDER_AS_CATEGORY = False
 # Theme and Static Files
 THEME = 'theme/notmyidea'
 STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
+DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'archivers']
 
 # Content Paths
 ARTICLE_PATHS = ['posts']
@@ -30,17 +31,7 @@ MENUITEMS = [
     ('Submit Post', 'https://salasblogf.fly.dev/'),
     ('Brandeis', 'brandeis.html'),
     ('About','about.html'),
-    # ('About2','/about.html'),
-    # ('About3','pages/about.html'),
-    # ('About4','/pages/about.html'),
-    # ('Brandeis1','brandeis.html'),
-    # ('Brandeis2','/brandeis.html'),
-    # ('Brandeis3','pages/brandeis.html'),
-    # ('Brandeis4','/pages/brandeis.html'),
     ('Curacao','curacao.html'),
-    # ('Curacao2','/curacao.html'),
-    # ('Curacao3','pages/curacao.html'),
-    # ('Curacao4','/pages/curacao.html'),
     ('Archive', 'archives.html'),
     ('Archivers', 'archivers.html'),
 

@@ -2,23 +2,35 @@
 {% block title %}Archives - {{ SITENAME }}{% endblock %}
 
 {% block content %}
-{% if articles %}
 <section id="content" class="body">
-  <h1>All Posts</h1>
+  <h1>Archive by Year and Month</h1>
 
-  <ul id="archive-list">
-    {% for article in articles %}
-      <li class="hentry" style="margin-bottom: 1em;">
-        <h2 class="entry-title" style="font-size: 1.5em; margin-bottom: 0.2em;">
-          <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark">{{ article.title }}</a>
-        </h2>
-        <p class="post-info" style="font-size: 0.9em; margin: 0;">
-          Published: {{ article.date.strftime('%Y-%m-%d') }}
-          <span style="float: right;"><a class="readmore" href="{{ SITEURL }}/{{ article.url }}">read more</a></span>
-        </p>
-      </li>
+  {% set grouped = {} %}
+  {% for article in dates %}
+    {% set y = article.date.strftime('%Y') %}
+    {% set m = article.date.strftime('%B') %}
+    {% if grouped[y] is not defined %}
+      {% set _ = grouped.update({y: {}}) %}
+    {% endif %}
+    {% if grouped[y][m] is not defined %}
+      {% set _ = grouped[y].update({m: []}) %}
+    {% endif %}
+    {% set _ = grouped[y][m].append(article) %}
+  {% endfor %}
+
+  <ul class="archive">
+    {% for year in grouped.keys()|sort(reverse=true) %}
+      <li><strong>{{ year }}</strong></li>
+      {% for month in grouped[year].keys()|sort(attribute='lower') %}
+        <li style="margin-left: 1em;"><strong>{{ month }}</strong></li>
+        {% for article in grouped[year][month] %}
+          <li style="margin-left: 2em; list-style-type: disc;">
+            {{ article.date.strftime('%Y-%m-%d') }} –
+            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+          </li>
+        {% endfor %}
+      {% endfor %}
     {% endfor %}
   </ul>
 </section>
-{% endif %}
 {% endblock %}
