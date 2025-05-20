@@ -28,8 +28,6 @@ DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = [
     ('Home', '/'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
-    ('Archive', 'archives.html'),
-    ('Archivers', 'archivers.html'),
     ('Brandeis', 'brandeis.html'),
     ('About','about.html'),
     # ('About2','/about.html'),
@@ -42,5 +40,8 @@ MENUITEMS = [
     ('Curacao','curacao.html'),
     # ('Curacao2','/curacao.html'),
     # ('Curacao3','pages/curacao.html'),
-    # ('Curacao4','/pages/curacao.html')
+    # ('Curacao4','/pages/curacao.html'),
+    ('Archive', 'archives.html'),
+    ('Archivers', 'archivers.html'),
+
 ]
