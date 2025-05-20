@@ -28,7 +28,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 MENUITEMS = [
     ('Home', '/'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
-    ('New Archive', 'archives.html'),    
+    ('New Archive', 'archivers.html'),    
     ('Archive', '/archives.html'),
     ('Archive', 'archives.html'),
     ('Brandeis', 'brandeis.html'),
