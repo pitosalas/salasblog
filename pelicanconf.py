@@ -18,7 +18,7 @@ STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 
 # Content Paths
 ARTICLE_PATHS = ['posts']
-PAGE_PATHS = ['pages/about', 'pages/brandeis', 'pages/curacao']
+PAGE_PATHS = ['pages/about', 'pages/brandeis', 'pages/curacao','pages']
 PAGE_URL = '{slug}.html'
 PAGE_SAVE_AS = '{slug}.html'
 DISPLAY_PAGES_ON_MENU = False
@@ -29,7 +29,7 @@ MENUITEMS = [
     ('Home', '/'),
     ('Submit Post', 'https://salasblogf.fly.dev/'),
     ('Archive', 'archives.html'),
-    ('Archiver', 'archiver.html'),
+    ('Archivers', 'archivers.html'),
     ('Brandeis', 'brandeis.html'),
     ('About','about.html'),
     # ('About2','/about.html'),
