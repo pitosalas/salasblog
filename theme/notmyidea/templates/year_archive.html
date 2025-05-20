@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{% block title %}Archive for {{ page.metadata.year }} - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+<section id="content" class="body">
+  <h1>Archive: {{ page.metadata.year }}</h1>
+
+  {% set grouped = {} %}
+  {% for article in dates if article.date.strftime('%Y') == page.metadata.year %}
+    {% set m = article.date.strftime('%B') %}
+    {% if grouped[m] is not defined %}
+      {% set _ = grouped.update({m: []}) %}
+    {% endif %}
+    {% set _ = grouped[m].append(article) %}
+  {% endfor %}
+
+  <ul class="archive">
+    {% for month in grouped.keys()|sort(attribute='lower') %}
+      <li style="margin-left: 0;"><strong>{{ month }}</strong></li>
+      {% for article in grouped[month] %}
+        <li style="margin-left: 2em; list-style-type: disc;">
+          {{ article.date.strftime('%Y-%m-%d') }} –
+          <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
+        </li>
+      {% endfor %}
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

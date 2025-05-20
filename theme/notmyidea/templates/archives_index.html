@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Archives by Year - {{ SITENAME }}{% endblock %}
+
+{% block content %}
+{% set years = ['2025', '2024', '2023'] %}
+
+<section id="content" class="body">
+  <h1>Archives by Year</h1>
+  <ul>
+    {% for year in years %}
+      <li>
+        <a href="{{ SITEURL }}/archives/{{ year }}.html">Archive {{ year }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

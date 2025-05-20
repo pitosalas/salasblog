@@ -33,6 +33,6 @@ MENUITEMS = [
     ('About','about.html'),
     ('Curacao','curacao.html'),
     ('Archive', 'archives.html'),
-    ('Archivers', 'archivers.html'),
+    ('Archivers', 'archives/index.html'),
 
 ]

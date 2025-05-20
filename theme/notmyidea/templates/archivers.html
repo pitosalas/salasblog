@@ -1,36 +1,5 @@
-{% extends "base.html" %}
-{% block title %}Archives - {{ SITENAME }}{% endblock %}
-
-{% block content %}
-<section id="content" class="body">
-  <h1>Archive by Year and Month</h1>
-
-  {% set grouped = {} %}
-  {% for article in dates %}
-    {% set y = article.date.strftime('%Y') %}
-    {% set m = article.date.strftime('%B') %}
-    {% if grouped[y] is not defined %}
-      {% set _ = grouped.update({y: {}}) %}
-    {% endif %}
-    {% if grouped[y][m] is not defined %}
-      {% set _ = grouped[y].update({m: []}) %}
-    {% endif %}
-    {% set _ = grouped[y][m].append(article) %}
-  {% endfor %}
-
-  <ul class="archive">
-    {% for year in grouped.keys()|sort(reverse=true) %}
-      <li><strong>{{ year }}</strong></li>
-      {% for month in grouped[year].keys()|sort(attribute='lower') %}
-        <li style="margin-left: 1em;"><strong>{{ month }}</strong></li>
-        {% for article in grouped[year][month] %}
-          <li style="margin-left: 2em; list-style-type: disc;">
-            {{ article.date.strftime('%Y-%m-%d') }} –
-            <a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a>
-          </li>
-        {% endfor %}
-      {% endfor %}
-    {% endfor %}
-  </ul>
-</section>
-{% endblock %}
+<h2>Archives by Year</h2>
+<ul>
+  <li><a href="{{ SITEURL }}/archives/2025.html">2025</a></li>
+  <li><a href="{{ SITEURL }}/archives/2024.html">2024</a></li>
+</ul>
