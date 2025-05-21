@@ -1,5 +1,6 @@
 import os
 
+THEME = os.path.abspath(os.path.join(os.path.dirname(__file__), 'theme', 'notmyidea'))
 AUTHOR = 'Pito Salas'
 SITENAME = 'Salas Blog'
 SITETITLE = 'Salas Blog'
@@ -15,7 +16,6 @@ USE_FOLDER_AS_CATEGORY = False
 RELATIVE_URLS = True
 
 # Theme and Static Files
-THEME = os.path.abspath(os.path.join(os.path.dirname(__file__), 'theme', 'notmyidea'))
 STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'archivers']
 
