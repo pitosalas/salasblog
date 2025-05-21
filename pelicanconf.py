@@ -1,3 +1,4 @@
+import os
 
 AUTHOR = 'Pito Salas'
 SITENAME = 'Salas Blog'
@@ -11,9 +12,10 @@ DEFAULT_DATE_FORMAT = '%Y-%m-%d'
 DEFAULT_PAGINATION = 10
 LOAD_CONTENT_CACHE = False
 USE_FOLDER_AS_CATEGORY = False
+RELATIVE_URLS = True
 
 # Theme and Static Files
-THEME = 'theme/notmyidea'
+THEME = os.path.abspath(os.path.join(os.path.dirname(__file__), 'theme', 'notmyidea'))
 STATIC_PATHS = ['images', 'theme/css', 'theme/js', 'theme/fonts']
 DIRECT_TEMPLATES = ['index', 'tags', 'categories', 'archives', 'archivers']
 
