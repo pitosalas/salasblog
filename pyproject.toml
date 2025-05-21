@@ -1,0 +1,12 @@
+[project]
+name = "salasblog"
+version = "0.1.0"
+description = "A static blog site built with Pelican"
+authors = [{name = "Pito Salas"}]
+readme = "readme.md"
+requires-python = ">=3.8"
+dependencies = [
+    "markdown>=3.7",
+    "pelican>=4.8.0",
+]
+
