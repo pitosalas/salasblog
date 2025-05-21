@@ -31,6 +31,9 @@ jobs:
         run:
           uv sync
           
+      - name: Check pwd
+        run: pwd
+        
       - name: Run pelican
         run: uv run pelican content -o output -s publishconf.py
 
