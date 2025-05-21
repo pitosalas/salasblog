@@ -35,7 +35,7 @@ jobs:
         run: pwd; ls -la
 
       - name: Run pelican
-        run: PYTHONPATH=. uv run pelican content -o output -s publishconf.py
+        run: uv run pelican content -e SITEURL='"https://pitosalas.github.io/salasblog"' RELATIVE_URLS='false'
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
