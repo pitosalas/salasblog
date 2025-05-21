@@ -30,7 +30,7 @@ jobs:
         run: pip install pelican markdown
 
       - name: Build Pelican site
-        run: pelican content -o output -s publicconf.py
+        run: pelican content -o output -s publishconf.py
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
