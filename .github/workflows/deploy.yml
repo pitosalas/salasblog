@@ -35,8 +35,7 @@ jobs:
         run: pwd; ls -la
 
       - name: Run pelican
-        run: uv run pelican content -o output -s publishconf.py
-        working-directory: salasblog  # 👈 This is the key fix
+        run: PYTHONPATH=. uv run pelican content -o output -s publishconf.py
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
