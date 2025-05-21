@@ -2,7 +2,7 @@
 AUTHOR = 'Pito Salas'
 SITENAME = 'Salas Blog'
 SITETITLE = 'Salas Blog'
-SITEURL = 'https://pitosalas.github.io/salasblog' 
+SITEURL = '' 
 
 PATH = 'content'
 TIMEZONE = 'America/New_York'
@@ -32,7 +32,7 @@ MENUITEMS = [
     ('Brandeis', 'brandeis.html'),
     ('About','about.html'),
     ('Curacao','curacao.html'),
-    ('Archive', 'archives.html'),
-    ('Archivers', 'archives/index.html'),
+    ('Posts by year', 'archives/index.html'),
+    ('All Posts', 'archives.html'),
 
 ]
